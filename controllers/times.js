@@ -1,6 +1,6 @@
 const database = require('./../data/database')
 
-exports.inserirTimeEquipePontuacao = (req, res, next) => {    
+exports.inserirquarto = (req, res, next) => {    
     const novoQuarto = req.body
     const query = 'INSERT INTO Quartos(Num, num_vagas, disponivel, total_hospedes) VALUES ($1, $2, $3, $4)'
     const values = [novoQuarto.Num, novoQuarto.num_vagas, novoQuarto.disponivel, novoQuarto.total_hospedes]
